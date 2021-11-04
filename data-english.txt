@@ -1,0 +1,4 @@
+Surname: Dzyuba; Popova; Khvisuchik; Nesterov
+Group number: 110241; 110242; 110243; 110242
+Grades for physics, math, computer science: 9, 8, 10; 1, 3, 1; 7, 10, 8; 2, 2, 2
+GPA: 9; 2; 8; 2
