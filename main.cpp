@@ -114,7 +114,6 @@ int main() {
   for (auto iterator = students.begin(); iterator != students.end(); iterator++) {
     Student student = iterator->second;
 
-    // get by neededClassIndex
     int computerScienceGrade = student.grades[computerScienceClassIdx];
     if (computerScienceGrade == 9 || computerScienceGrade == 10) {
       neededStudents.push_back(student);
