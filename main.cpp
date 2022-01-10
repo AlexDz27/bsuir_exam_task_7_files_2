@@ -17,7 +17,7 @@ struct Student {
 };
 
 int main() {
-  const string DATA_FILE_PATH = "C:\\Users\\Alex\\CLionProjects\\bsuir-exam-task-7-files-2\\data-english.txt";
+  const string DATA_FILE_PATH = "C:\\Users\\Alex\\CLionProjects\\bsuir-exam-task-7-files-2\\data.txt";
 
   // Reading data file lines
   unordered_map<string, Student> students;
@@ -108,25 +108,20 @@ int main() {
   }
 
   // Doing the task
-  int neededGroupNumber = 110242;
-  int neededUnsatisfyingGrade = 4;
+  int computerScienceClassIdx = 2; // computer science
   vector<Student> neededStudents;
 
   for (auto iterator = students.begin(); iterator != students.end(); iterator++) {
     Student student = iterator->second;
 
-    if (student.groupNumber == neededGroupNumber) {
-      for (int grade : student.grades) {
-        if (grade < neededUnsatisfyingGrade) {
-          neededStudents.push_back(student);
-
-          break;
-        }
-      }
+    // get by neededClassIndex
+    int computerScienceGrade = student.grades[computerScienceClassIdx];
+    if (computerScienceGrade == 9 || computerScienceGrade == 10) {
+      neededStudents.push_back(student);
     }
   }
 
-  cout << "Information about students from group number " << neededGroupNumber << " and who have a grade lower than " << neededUnsatisfyingGrade << ": \n" << endl;
+  cout << "Information about students who have grade 9 or 10 in computer science: \n" << endl;
   for (Student student : neededStudents) {
     cout << "Surname: " << student.surname << endl;
 
