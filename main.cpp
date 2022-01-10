@@ -17,7 +17,7 @@ struct Student {
 };
 
 int main() {
-  const string DATA_FILE_PATH = "C:\\Users\\Alex\\CLionProjects\\bsuir-exam-task-7-files-2\\data.txt";
+  const string DATA_FILE_PATH = "C:\\Users\\Alex\\CLionProjects\\bsuir-exam-task-7-files-2\\data-english.txt";
 
   // Reading data file lines
   unordered_map<string, Student> students;

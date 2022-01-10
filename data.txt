@@ -1,4 +1,4 @@
 Surname: Дзюба; Иванов
-Group number: 110241; 110242;
-Grades for physics, math, computer science: 9, 8, 7; 1, 3, 9;
+Group number: 110241; 110242
+Grades for physics, math, computer science: 9, 8, 7; 1, 3, 9
 GPA: 9; 2
